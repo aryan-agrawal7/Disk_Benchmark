@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include "method1.h"
+#include "method2.h"
 #include <stdlib.h>
 int main(int argc,char** argv){
     if(argc < 3) {
@@ -8,6 +9,7 @@ int main(int argc,char** argv){
     }
     int size = atoi(argv[1]);
     char* location = argv[2];
-    method1(size, location);
+    //method1(size, location);
+    method2_function(size, location);
     return 0;
 }
