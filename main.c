@@ -10,6 +10,6 @@ int main(int argc,char** argv){
     int size = atoi(argv[1]);
     char* location = argv[2];
     //method1(size, location);
-    method2_function(size, location);
+    SizeMeasure(size, location);
     return 0;
 }

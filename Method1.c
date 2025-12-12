@@ -10,7 +10,7 @@ long gettime(){
     return tv.tv_sec * 1000 + tv.tv_usec/1000;
 }
 
-void method1(int size, char* location) {
+void SizeMeasure(int size, char* location) {
     char pathZero[1024];
     char pathRand[1024];
 
@@ -27,7 +27,7 @@ void method1(int size, char* location) {
 
     long size_bytes = 1024L * 1024L * 1024L * size;
     
-    long size_buffer = 4096; 
+    long size_buffer = 16L * 1024L * 1024L;
     long repetitions = size_bytes / size_buffer;
     
     char* buffer = (char*) malloc(size_buffer);

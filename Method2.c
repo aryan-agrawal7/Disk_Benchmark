@@ -5,7 +5,7 @@
 #include <stdbool.h>
 #include <stdlib.h>
 
-void method2_function(int time, char* location) {
+void SizeMeasure(int time, char* location) {
     char* command = malloc(1000 * sizeof(char));
     snprintf(command, 100, "timeout %ds cat /dev/zero > %s/random.bin", time, location);
     int status = system(command);
